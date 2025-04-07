@@ -1,0 +1,24 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "lib": ["esnext"],
+    "moduleResolution": "bundler", // Compatible with customConditions and modern bundlers
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true, // Added for better compatibility with react-native-vector-icons
+    "resolveJsonModule": true
+  },
+  "include": ["./src/**/*", "./app.tsx"],
+  "exclude": ["node_modules"]
+}
